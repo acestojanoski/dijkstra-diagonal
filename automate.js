@@ -1,7 +1,9 @@
 const handleResult = (result) => {
   let resultName = 'dijkstraResult';
   let previousResult = localStorage.getItem(resultName);
-  if (previousResult) {
+  if (!previousResult) {
+    localStorage.setItem(resultName, result);
+  } else {
     localStorage.setItem(resultName, `${localStorage.getItem(resultName)}, ${result}`);
   }
 }
