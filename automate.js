@@ -13,7 +13,7 @@ let observer = new MutationObserver((mutations, me) => {
   if (result.indexOf('took') !== -1) {
     handleResult(result);
     me.disconnect(); // stop observing
-    location.reload();
+    location.reload(true);
   }
 });
 
