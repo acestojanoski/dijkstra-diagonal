@@ -108,7 +108,7 @@ function draw() {
       console.log("DONE!");
       var title = document.getElementById('title');
       var endTime = new Date();
-      title.innerHTML = "A* took: " + diff_seconds(startTime, endTime) + " and visited " + visited + " nodes";
+      title.innerHTML = "Dijkstra took: " + diff_seconds(startTime, endTime) + " and visited " + visited + " nodes";
     }
 
     // Best option moves from openSet to closedSet
