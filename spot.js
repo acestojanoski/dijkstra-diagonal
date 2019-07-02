@@ -12,7 +12,7 @@ function Spot(i, j) {
   this.i = i;
   this.j = j;
 
-  // f, g, and h values for A*
+  // f, g, and h values for Dijkstra
   this.f = 0;
   this.g = 0;
   this.h = 0;

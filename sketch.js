@@ -52,7 +52,7 @@ var path = [];
 
 function setup() {
   createCanvas(600, 600);
-  console.log('A*');
+  console.log('Dijkstra');
 
   // Grid cell size
   w = width / cols;
